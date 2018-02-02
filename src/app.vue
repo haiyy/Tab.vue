@@ -1,0 +1,65 @@
+<template>
+    <div>
+    </div>
+</template>
+<script>
+import Tab from "./js/tab.js"
+export default {
+    name: "tab",
+    mounted() {
+        this.go();
+    },
+    methods: {
+        go() {
+            let test=new Tab();
+            console.log(666)
+        }
+    }
+}
+</script>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+ol, ul ,li{list-style: none;}
+.warp{
+    width: 200px;
+    height: 200px;
+    border:1px solid #ccc;
+    margin:0 auto;
+    display: flex;
+    flex-direction:column;
+}
+.tit{
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    flex-shrink:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+.tit span{
+    display: block;
+    width:33.3%;
+    height: 100%;
+    line-height:30px;
+    text-align: center;
+    border-right:1px solid #ccc;
+    background: skyblue;
+}
+.content{
+    width:100%;
+    height: 100%;
+    flex-grow:1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background:pink;
+}
+</style>
